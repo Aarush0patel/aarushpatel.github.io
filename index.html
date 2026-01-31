@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Favicon.png">
+    <title>Portfolio - Aarush patel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/journey.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-[#FAF9F6] text-[#3D2B1F] overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#home" class="text-xl font-bold tracking-tight">
+                    <span class="text-[#3D2B1F]">Port</span>
+                    <span class="text-[#A0826D]">folio</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-1" id="desktop-nav">
+                    <a href="#home"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#3D2B1F]"
+                        data-section="home">Home</a>
+                    <a href="#about"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#8B7355] hover:text-[#3D2B1F]"
+                        data-section="about">About</a>
+                    <a href="#journey"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#8B7355] hover:text-[#3D2B1F]"
+                        data-section="journey">High School</a>
+                    <a href="#extracurriculars"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#8B7355] hover:text-[#3D2B1F]"
+                        data-section="extracurriculars">ECs</a>
+                    <a href="#experience"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#8B7355] hover:text-[#3D2B1F]"
+                        data-section="experience">Experience</a>
+                    <a href="#projects"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#8B7355] hover:text-[#3D2B1F]"
+                        data-section="projects">Projects</a>
+                    <a href="#skills"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#8B7355] hover:text-[#3D2B1F]"
+                        data-section="skills">Skills</a>
+                    <a href="#resume"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#8B7355] hover:text-[#3D2B1F]"
+                        data-section="resume">Resume</a>
+                    <a href="#contact"
+                        class="nav-link relative px-4 py-2 text-sm font-medium transition-colors duration-300 text-[#8B7355] hover:text-[#3D2B1F]"
+                        data-section="contact">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-[#8B7355] hover:text-[#3D2B1F] transition-colors"
+                    aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-nav" class="md:hidden bg-white/98 backdrop-blur-xl border-t border-[#E8E0D5] hidden">
+            <div class="px-6 py-4 space-y-1">
+                <a href="#home"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="home">Home</a>
+                <a href="#about"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="about">About</a>
+                <a href="#journey"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="journey">High School</a>
+                <a href="#extracurriculars"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="extracurriculars">ECs</a>
+                <a href="#experience"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="experience">Experience</a>
+                <a href="#projects"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="projects">Projects</a>
+                <a href="#skills"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="skills">Skills</a>
+                <a href="#resume"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="resume">Resume</a>
+                <a href="#contact"
+                    class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium transition-all text-[#8B7355] hover:text-[#3D2B1F] hover:bg-[#FAF9F6]"
+                    data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FAF9F6]">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute inset-0"
+                style="background-image: radial-gradient(circle at 1px 1px, #D4C4B0 1px, transparent 0); background-size: 40px 40px;">
+            </div>
+        </div>
+        <div class="absolute top-1/4 -left-32 w-96 h-96 bg-[#D4A574]/20 rounded-full blur-[128px]"></div>
+        <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-[#A0826D]/20 rounded-full blur-[128px]"></div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto fade-in">
+            <div class="mb-6 fade-in-delay-1">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#E8E0D5] shadow-sm mb-8">
+                    <i data-lucide="rocket" class="w-4 h-4 text-[#A0826D]"></i>
+                    <span class="text-sm text-[#6B5B4F]">Aspiring Engineer</span>
+                </div>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 fade-in-delay-2">
+                <span class="text-[#3D2B1F]">Aarush </span>
+                <span class="text-[#A0826D]">Patel</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl text-[#6B5B4F] font-light mb-8 leading-relaxed fade-in-delay-3">
+                Building the future, one project at a time
+            </p>
+
+            <p class="text-[#8B7355] max-w-2xl mx-auto mb-12 fade-in-delay-4">
+                High school junior passionate about mechanical engineering and problem-solving.
+                Combining curiosity with technical skills to solve real-world problems.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-delay-5">
+                <a href="#contact"
+                    class="px-8 py-4 bg-[#3D2B1F] rounded-full text-white font-medium hover:bg-[#2A1F16] hover:shadow-lg transition-all duration-300 hover:scale-105">Get
+                    in Touch</a>
+                <a href="#journey"
+                    class="px-8 py-4 bg-white border border-[#E8E0D5] rounded-full text-[#3D2B1F] font-medium hover:bg-[#F5F0EB] transition-all duration-300">View
+                    My Journey</a>
+            </div>
+        </div>
+
+        <button
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#B8A99A] hover:text-[#8B7355] transition-colors fade-in-delay-6"
+            aria-label="Scroll to About section"
+            onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <i data-lucide="chevron-down" class="w-8 h-8 animate-bounce"></i>
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-white"></div>
+        <div
+            class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#8B7355]/20 to-transparent">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 scroll-fade-in">
+                <span
+                    class="text-[#A0826D] text-sm font-medium tracking-widest uppercase mb-4 block">Introduction</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#3D2B1F] mb-6">About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#A0826D] to-[#D4A574] mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Main Content: Text + Photo -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-16">
+                <!-- Left Column: Biography -->
+                <div class="space-y-6 scroll-fade-in-left order-2 lg:order-1">
+                    <p class="text-lg text-[#3D2B1F] leading-relaxed">
+                        Hello! I'm Aarush Patel, a high school junior with a passion for mechanical engineering
+                        and problem-solving. Ever since I was young, I've been
+                        captivated by how physics and engineering come together to solve real-world problems.
+                    </p>
+                    <p class="text-[#6B5B4F] leading-relaxed">
+                        My began with building complex creations out of Lego sets, which sparked my passion for
+                        designing and problem-solving. Today, I'm developing
+                        autonomous systems for robotics competitions, combining mechanical, electrical, and software
+                        skills to tackle real-world challenges.
+                    </p>
+                    <p class="text-[#6B5B4F] leading-relaxed">
+                        Looking ahead, I aspire to pursue mechanical engineering at a leading institution
+                        and eventually contribute to projects that push the boundaries of technology,
+                        whether in aircraft, robotics, or space exploration.
+                    </p>
+
+                    <div class="pt-6 flex flex-wrap gap-4">
+                        <div class="px-4 py-2 bg-[#FAF9F6] rounded-lg border border-[#E8E0D5]">
+                            <span class="text-[#A0826D] font-semibold">Grade:</span>
+                            <span class="text-[#8B7355] text-sm ml-2">11</span>
+                        </div>
+                        <div class="px-4 py-2 bg-[#FAF9F6] rounded-lg border border-[#E8E0D5]">
+                            <span class="text-[#A0826D] font-semibold">21</span>
+                            <span class="text-[#8B7355] text-sm ml-2">Credits Earned</span>
+                        </div>
+                        <div style="visibility: hidden;"
+                            class="px-4 py-2 bg-[#FAF9F6] rounded-lg border border-[#E8E0D5]">
+                            <span class="text-[#A0826D] font-semibold">21</span>
+                            <span class="text-[#8B7355] text-sm ml-2">Credits Earned</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Photo -->
+                <div class="scroll-fade-in-right order-1 lg:order-2 flex justify-center">
+                    <div
+                        class="relative w-full max-w-md aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/50">
+                        <img src="images/Photo.png" alt="Aarush Patel"
+                            class="absolute inset-0 w-full h-full object-cover object-top">
+                        <!-- Decorative elements overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/20 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Value Cards -->
+            <div class="grid md:grid-cols-3 gap-6 scroll-fade-in-up">
+                <div
+                    class="group p-6 bg-[#FAF9F6] rounded-2xl border border-[#E8E0D5] hover:border-[#D4A574]/30 hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-start gap-4">
+                        <div
+                            class="p-3 bg-white rounded-xl border border-[#E8E0D5] group-hover:border-[#D4A574]/30 transition-all duration-300">
+                            <i data-lucide="target" class="w-6 h-6 text-[#A0826D]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3D2B1F] mb-2">Mission-Driven</h3>
+                            <p class="text-[#6B5B4F] text-sm leading-relaxed">Every project I take on aligns with my
+                                goal of developing practical engineering solutions that make a real-world impact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group p-6 bg-[#FAF9F6] rounded-2xl border border-[#E8E0D5] hover:border-[#D4A574]/30 hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-start gap-4">
+                        <div
+                            class="p-3 bg-white rounded-xl border border-[#E8E0D5] group-hover:border-[#D4A574]/30 transition-all duration-300">
+                            <i data-lucide="lightbulb" class="w-6 h-6 text-[#A0826D]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3D2B1F] mb-2">Curiosity First</h3>
+                            <p class="text-[#6B5B4F] text-sm leading-relaxed">I believe the best engineers are
+                                lifelong learners. I'm always exploring new concepts and pushing boundaries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group p-6 bg-[#FAF9F6] rounded-2xl border border-[#E8E0D5] hover:border-[#D4A574]/30 hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col items-start gap-4">
+                        <div
+                            class="p-3 bg-white rounded-xl border border-[#E8E0D5] group-hover:border-[#D4A574]/30 transition-all duration-300">
+                            <i data-lucide="compass" class="w-6 h-6 text-[#A0826D]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#3D2B1F] mb-2">Systems Thinking</h3>
+                            <p class="text-[#6B5B4F] text-sm leading-relaxed">Understanding how components work
+                                together to create complex systems is at the core of my approach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[#FAF9F6]"></div>
+        <div
+            class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#8B7355]/20 to-transparent">
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-fade-in">
+                <span class="text-[#A0826D] text-sm font-medium tracking-widest uppercase mb-4 block">Academic
+                    Path</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#3D2B1F] mb-6">High School Journey</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#A0826D] to-[#D4A574] mx-auto rounded-full mb-8"></div>
+                <p class="text-[#6B5B4F] max-w-2xl mx-auto">
+                    Click on each year to explore the courses I've taken and how they connect to my engineering
+                    aspirations.
+                </p>
+            </div>
+
+            <div class="space-y-4" id="journey-years"></div>
+
+            <div
+                class="mt-12 p-6 bg-gradient-to-r from-[#A0826D]/10 via-[#D4A574]/10 to-[#A0826D]/10 rounded-2xl border border-[#D4A574]/20 scroll-fade-in">
+                <div class="flex items-start gap-4">
+                    <i data-lucide="book-open" class="w-6 h-6 text-[#A0826D] flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h3 class="text-lg font-semibold text-[#3D2B1F] mb-2">Strategic Course Selection</h3>
+                        <p class="text-[#6B5B4F] text-sm leading-relaxed">
+                            Each year builds upon the last, creating a cohesive academic foundation for mechanical
+                            engineering.
+                            From foundational math and science to advanced physics and independent research, every
+                            choice serves my goal of understanding how engineering can impact the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurriculars Section -->
+    <section id="extracurriculars" class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-white"></div>
+        <div
+            class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#8B7355]/20 to-transparent">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 scroll-fade-in">
+                <span class="text-[#A0826D] text-sm font-medium tracking-widest uppercase mb-4 block">Beyond the
+                    Classroom</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#3D2B1F] mb-6">Extracurriculars</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#A0826D] to-[#D4A574] mx-auto rounded-full mb-8"></div>
+                <p class="text-[#6B5B4F] max-w-2xl mx-auto">
+                    Hands-on experiences where I apply my knowledge, develop leadership skills, and contribute to my
+                    community.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="extracurriculars-grid"></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[#FAF9F6]"></div>
+        <div
+            class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#8B7355]/20 to-transparent">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 scroll-fade-in">
+                <span class="text-[#A0826D] text-sm font-medium tracking-widest uppercase mb-4 block">Professional &
+                    Volunteering</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#3D2B1F] mb-6">Experience</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#A0826D] to-[#D4A574] mx-auto rounded-full mb-8"></div>
+                <p class="text-[#6B5B4F] max-w-2xl mx-auto">
+                    Relevant work experience, internships, and community involvement.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6" id="experience-grid"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-white"></div>
+        <div
+            class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#8B7355]/20 to-transparent">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-fade-in">
+                <span class="text-[#A0826D] text-sm font-medium tracking-widest uppercase mb-4 block">Hands-On
+                    Work</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#3D2B1F] mb-6">Projects</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#A0826D] to-[#D4A574] mx-auto rounded-full mb-8"></div>
+                <p class="text-[#6B5B4F] max-w-2xl mx-auto">
+                    A collection of engineering projects where I've applied my skills to build real solutions.
+                </p>
+            </div>
+
+            <div class="relative" id="projects-container"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[#FAF9F6]"></div>
+        <div
+            class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#8B7355]/20 to-transparent">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 scroll-fade-in">
+                <span class="text-[#A0826D] text-sm font-medium tracking-widest uppercase mb-4 block">Technical
+                    Proficiency</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#3D2B1F] mb-6">Skills & Tools</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#A0826D] to-[#D4A574] mx-auto rounded-full mb-8"></div>
+                <p class="text-[#6B5B4F] max-w-2xl mx-auto">
+                    A comprehensive toolkit developed through coursework, personal projects, and competition experience.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8" id="skills-grid"></div>
+
+            <div class="mt-12 text-center scroll-fade-in">
+                <p class="text-[#8B7355] text-sm mb-4">Also familiar with:</p>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span
+                        class="px-4 py-2 bg-white rounded-full text-sm text-[#6B5B4F] border border-[#E8E0D5]">Git</span>
+                    <span class="px-4 py-2 bg-white rounded-full text-sm text-[#6B5B4F] border border-[#E8E0D5]">Google
+                        Workspace</span>
+                    <span
+                        class="px-4 py-2 bg-white rounded-full text-sm text-[#6B5B4F] border border-[#E8E0D5]">Excel</span>
+                    <span
+                        class="px-4 py-2 bg-white rounded-full text-sm text-[#6B5B4F] border border-[#E8E0D5]">Arduino</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-white"></div>
+        <div
+            class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#8B7355]/20 to-transparent">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 scroll-fade-in">
+                <span class="text-[#A0826D] text-sm font-medium tracking-widest uppercase mb-4 block">Achievements &
+                    Credentials</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#3D2B1F] mb-6">Resume & Academics</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#A0826D] to-[#D4A574] mx-auto rounded-full mb-8"></div>
+            </div>
+
+            <div class="mb-16 scroll-fade-in">
+                <div
+                    class="p-8 bg-gradient-to-r from-[#A0826D]/10 via-[#D4A574]/10 to-[#A0826D]/10 rounded-3xl border border-[#D4A574]/20 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="flex items-center gap-4">
+                        <div class="p-4 bg-white rounded-2xl border border-[#E8E0D5]">
+                            <i data-lucide="file-text" class="w-8 h-8 text-[#A0826D]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-[#3D2B1F]">Full Resume</h3>
+                            <p class="text-[#6B5B4F]">Download my complete resume in PDF format</p>
+                        </div>
+                    </div>
+                    <a href="Resume.pdf" download
+                        class="flex items-center gap-2 px-6 py-3 bg-[#3D2B1F] rounded-full text-white font-medium hover:bg-[#2A1F16] hover:shadow-lg transition-all duration-300 hover:scale-105">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-16" id="resume-highlights"></div>
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[#FAF9F6]"></div>
+        <div
+            class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#8B7355]/20 to-transparent">
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-fade-in">
+                <span class="text-[#A0826D] text-sm font-medium tracking-widest uppercase mb-4 block">Get In
+                    Touch</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#3D2B1F] mb-6">Let's Connect</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#A0826D] to-[#D4A574] mx-auto rounded-full mb-8"></div>
+                <p class="text-[#6B5B4F] max-w-xl mx-auto">
+                    I'm always excited to discuss opportunities, collaborate on projects,
+                    or simply chat about engineering.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-16" id="contact-links"></div>
+
+            <div class="p-8 bg-white rounded-3xl border border-[#E8E0D5] text-center shadow-sm scroll-fade-in">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FAF9F6] border border-[#E8E0D5] mb-6">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-[#A0826D]"></i>
+                    <span class="text-sm text-[#6B5B4F]">Toronto, ON</span>
+                </div>
+                <h3 class="text-2xl font-bold text-[#3D2B1F] mb-4">Open to Opportunities</h3>
+                <p class="text-[#6B5B4F] mb-6 max-w-lg mx-auto">
+                    Whether it's an internship, research opportunity, or collaborative project,
+                    I'd love to hear from you. Let's build something amazing together.
+                </p>
+                <a href="mailto:aarushpatel630@gmail.com" target="_blank"
+                    class="inline-flex items-center gap-2 px-8 py-4 bg-[#3D2B1F] rounded-full text-white font-medium hover:bg-[#2A1F16] hover:shadow-lg transition-all duration-300 hover:scale-105">
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                    Send Me a Message
+                </a>
+            </div>
+
+            <div class="mt-20 pt-8 border-t border-[#E8E0D5] text-center scroll-fade-in">
+                <p class="text-sm text-[#8B7355]">Designed & Built by Aarush Patel • © <span id="current-year"></span>
+                </p>
+                <p class="text-xs text-[#B8A99A] mt-2">Reaching for greater heights, one project at a time!</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/journey.js"></script>
+    <script src="js/extracurriculars.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/resume.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
