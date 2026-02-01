@@ -23,9 +23,9 @@ function initJourneySection() {
             description: 'Deepening STEM focus and taking on challenges',
             courses: [
                 { icon: 'calculator', name: 'MPM2D0 - Principles Of Mathematics', description: 'Quadratic relations and analytic geometry.' },
-                { icon: 'flask-conical', name: 'SNC2D0 - Science', description: 'Biology, chemistry, earth and space science, and physics.' },
+                { icon: 'flask-conical', name: 'SNC2D0 - Science', description: 'Biology, chemistry, earth, and optics/light.' },
                 { icon: 'book-open', name: 'CHC2D0 - Canadian History', description: 'Canadian history since World War I.' },
-                { icon: 'briefcase', name: 'GLC2O0 - Career Studies & Civics', description: 'Career planning and civic responsibility.' },
+                { icon: 'briefcase', name: 'GLC2O0 - Career Studies & Civics', description: 'Career planning.' },
                 { icon: 'briefcase', name: 'CHV2O0 - Civics', description: 'Civic responsibility.' },
                 { icon: 'palette', name: 'AVI2O0 - Visual Arts', description: 'Creative expression through visual arts.' },
                 { icon: 'pen-tool', name: 'TDJ2O0 - Technological Design', description: 'Design fundamentals and engineering graphics.' },

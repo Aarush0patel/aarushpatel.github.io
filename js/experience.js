@@ -6,7 +6,7 @@ function initExperienceSection() {
             title: 'Frontend Developer Intern',
             organization: 'Comprehend Health',
             duration: 'Summer 2025',
-            description: 'Worked as a frontend developer intern at Comprehend Health, collaborting with a team in a real-world development environment. Gained hands-on experience with React.js, Node.js, and Git, while developing communication and professional workflow skills.',
+            description: 'Worked as a frontend developer intern at Comprehend Health, collaborating with a team in a real-world development environment. Gained hands-on experience with React.js, Node.js, and Git, while developing communication and professional workflow skills.',
             achievements: ['Frontend Developer', 'Internship', 'Workplace']
         },
         {

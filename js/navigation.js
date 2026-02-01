@@ -5,7 +5,7 @@ function initNavigation() {
     const mobileNav = document.getElementById('mobile-nav');
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
     let isMobileMenuOpen = false;
-    
+
     // Handle scroll
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -15,10 +15,10 @@ function initNavigation() {
             navbar.classList.remove('bg-white/95', 'backdrop-blur-xl', 'shadow-sm');
             navbar.classList.add('bg-transparent');
         }
-        
+
         updateActiveNav();
     });
-    
+
     // Mobile menu toggle
     mobileMenuBtn.addEventListener('click', () => {
         isMobileMenuOpen = !isMobileMenuOpen;
@@ -35,7 +35,7 @@ function initNavigation() {
             }, 300);
         }
     });
-    
+
     // Smooth scroll for nav links
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -50,19 +50,19 @@ function initNavigation() {
             }
         });
     });
-    
+
     // Update active nav
     function updateActiveNav() {
-        const sections = ['home', 'about', 'journey', 'extracurriculars', 'projects', 'skills', 'resume', 'contact'];
+        const sections = ['home', 'about', 'journey', 'extracurriculars', 'experience', 'projects', 'skills', 'resume', 'contact'];
         const scrollPos = window.scrollY + 150;
-        
+
         sections.reverse().forEach(section => {
             const element = document.getElementById(section);
             if (element) {
                 const rect = element.getBoundingClientRect();
                 const top = rect.top + window.scrollY;
                 const bottom = top + rect.height;
-                
+
                 if (scrollPos >= top && scrollPos < bottom) {
                     navLinks.forEach(link => {
                         if (link.getAttribute('data-section') === section) {
@@ -83,6 +83,6 @@ function initNavigation() {
             }
         });
     }
-    
+
     updateActiveNav();
 }

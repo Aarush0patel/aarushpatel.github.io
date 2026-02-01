@@ -5,10 +5,10 @@ function initProjectsSection() {
             icon: 'layout',
             title: 'Portfolio Website',
             category: 'Web Development',
-            description: 'My personal portfolio website designed to showcase my journey, projects, and skills. Built with HTML, CSS, and JavaScript, focusing on a clean, responsive, and interactive user experience.',
+            description: 'My personal portfolio website is designed to showcase my journey, projects, and skills. Built with HTML, CSS, and JavaScript, focusing on a clean, responsive, and interactive user experience.',
             technologies: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
             image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop',
-            github: '#',
+            github: 'https://github.com/Aarush0patel/aarushpatel.github.io',
             demo: null, // No live demo button for this
             progress: 100
         },

@@ -6,7 +6,7 @@ function initExtracurricularsSection() {
             title: 'Robotics Club - Chief of Programming',
             organization: 'Castlebrooke Robotics',
             duration: '2023 - Present',
-            description: 'Member → Programming Lead → Chief of Programming on a competive high school robotics team, contributing to robot software development and leading the team to regional championships and provincials. Gained experience in teamwork, leadership, and problem-solving.',
+            description: 'Member → Programming Lead → Chief of Programming on a competitive high school robotics team, contributing to robot software development and leading the team to regional championships and provincials. Gained experience in teamwork, leadership, and problem-solving.',
             achievements: ['Peel Skills Champions (2024)', '4th at Provincials (2024)', 'Peel Skills Champions (2025)', '5th at Provincials (2025)']
         },
         {
@@ -38,7 +38,7 @@ function initExtracurricularsSection() {
             title: 'Engineering Club - Education Executive',
             organization: 'Castlebrooke Engineering Club',
             duration: '2025 - Present',
-            description: 'Education Executive for the school Engineering club, leading the club in educational sessions and delivering presentations on engineering disciplines and Ardunio fundamentals. Focused on making engineering concepts accessible and engaging for students.',
+            description: 'Education Executive for the school Engineering club, leading the club in educational sessions and delivering presentations on engineering disciplines and Arduino fundamentals. Focused on making engineering concepts accessible and engaging for students.',
             achievements: ['Education Executive', 'Executive Member']
         }
     ];
