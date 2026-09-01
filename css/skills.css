@@ -1,0 +1,5 @@
+/* Skill Bar Animation */
+.skill-bar-fill {
+    width: 0;
+    transition: width 1s ease-out;
+}

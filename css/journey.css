@@ -1,0 +1,20 @@
+/* Journey Year Expand Animation */
+.journey-year-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+}
+
+
+.journey-year-content.expanded {
+    opacity: 1;
+}
+
+.journey-chevron {
+    transition: transform 0.3s ease-out;
+}
+
+.journey-chevron.rotated {
+    transform: rotate(180deg);
+}
